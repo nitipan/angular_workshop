@@ -1,0 +1,13 @@
+<h2>Catalog ID={{currentId}}</h2>
+
+<md-content>
+    <md-list>
+        <md-list-item ng-repeat="product in products" ng-click="null">
+            <p>{{product.name}}</p>
+            <md-button class="md-icon-button" ng-click="editProduct(product)">
+                <md-icon>settings</md-icon>
+            </md-button>
+
+        </md-list-item>
+    </md-list>
+</md-content>

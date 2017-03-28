@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-aria.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.js"></script>
+
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.css">
+    </link>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+
+
+    <script src="myProductListDirective.js"></script>
+    <script src="myProductItemDirective.js"></script>
+    <script src="productService.js"></script>
+    <script src="catalogController.js"></script>
+    <script src="productController.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="ProductController">
+    <div ng-include="'topnav.html'"></div>
+    <div ng-view style="border:1px solid gray; padding:10px;"></div>
+    <div ng-include="'footer.html'"></div>
+</body>
+
+</html>
